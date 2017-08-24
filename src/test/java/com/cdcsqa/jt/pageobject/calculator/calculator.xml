@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.cdcsqa.jt_appium-page-object_jar_1.0-SNAPSHOT">
+    <test name="Vanilla4 test">
+        <parameter name="appium.url" value="http://127.0.0.1:4723/wd/hub"/>
+        <parameter name="appium.deviceName" value="Vanilla4"/>
+        <parameter name="appium.platform" value="Android"/>
+        <parameter name="appium.platformVersion" value="4.4"/>
+        <parameter name="appium.appPackage" value="com.android.calculator2"/>
+        <parameter name="appium.appActivity" value="com.android.calculator2.Calculator"/>
+        <classes>
+            <class name="com.cdcsqa.jt.pageobject.calculator.CalculatorScreenTest"></class>
+        </classes>
+    </test>
+</suite>
