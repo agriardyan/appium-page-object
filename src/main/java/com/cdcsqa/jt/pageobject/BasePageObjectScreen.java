@@ -6,6 +6,7 @@
 package com.cdcsqa.jt.pageobject;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -23,11 +24,11 @@ import org.openqa.selenium.support.PageFactory;
 @EqualsAndHashCode
 public class BasePageObjectScreen {
     
-    protected AppiumDriver<? extends MobileElement> driver;
+    protected AppiumDriver driver;
     
     private final int WAIT_TIME = 10;
 
-    public BasePageObjectScreen(AppiumDriver<? extends MobileElement> driver) {
+    public BasePageObjectScreen(AppiumDriver driver) {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver, WAIT_TIME, TimeUnit.SECONDS), this);
     }

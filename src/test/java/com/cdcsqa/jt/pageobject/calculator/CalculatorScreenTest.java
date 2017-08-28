@@ -32,6 +32,9 @@ public class CalculatorScreenTest {
     private final String PLATFORM_ANDROID = "Android";
     private final String PLATFORM_IOS = "iOS";
 
+    private final String APP_PACKAGE = "appPackage";
+    private final String APP_ACTIVITY = "appActivity";
+
     @BeforeSuite(alwaysRun = true)
     public void setupBeforeSuite(ITestContext context) {
         String appiumUrl = context.getCurrentXmlTest().getParameter("appium.url");
@@ -42,11 +45,11 @@ public class CalculatorScreenTest {
         String appActivity = context.getCurrentXmlTest().getParameter("appium.appActivity");
 
         DesiredCapabilities capabilities = DesiredCapabilities.android();
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Vanilla4");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "4.4");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM, "Android");
-        capabilities.setCapability("appPackage", appPackage);
-        capabilities.setCapability("appActivity", appActivity);
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
+        capabilities.setCapability(MobileCapabilityType.PLATFORM, platform);
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platformVersion);
+        capabilities.setCapability(APP_PACKAGE, appPackage);
+        capabilities.setCapability(APP_ACTIVITY, appActivity);
 
         try {
             if(platform.equals(PLATFORM_ANDROID)) {

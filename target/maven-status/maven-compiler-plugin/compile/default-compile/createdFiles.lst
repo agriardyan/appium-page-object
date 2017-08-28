@@ -1,4 +1,5 @@
 com\cdcsqa\jt\pageobject\BasePageObjectScreen.class
+com\cdcsqa\jt\pageobject\kittenui\KittenMenuScreen.class
 com\cdcsqa\jt\App.class
 com\cdcsqa\jt\pageobject\calculator\CalculatorScreen.class
 com\cdcsqa\jt\event\EventAppium.class

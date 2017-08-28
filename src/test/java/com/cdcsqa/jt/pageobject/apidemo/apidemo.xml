@@ -6,10 +6,10 @@
         <parameter name="appium.deviceName" value="Vanilla4"/>
         <parameter name="appium.platform" value="Android"/>
         <parameter name="appium.platformVersion" value="4.4"/>
-        <parameter name="appium.appPackage" value="com.akveo.kittenTricks"/>
-        <parameter name="appium.appActivity" value="com.akveo.kittenTricks.MainActivity"/>
+        <parameter name="appium.appPackage" value="com.example.android.apis"/>
+        <parameter name="appium.appActivity" value="com.example.android.apis.ApiDemos"/>
         <classes>
-            <class name="com.cdcsqa.jt.pageobject.kittenui.KittenMenuScreenAndroidTest"></class>
+            <class name="com.cdcsqa.jt.pageobject.apidemo.ApiDemoHomeScreenTest"></class>
         </classes>
     </test>
 </suite>
